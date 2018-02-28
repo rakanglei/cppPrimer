@@ -1,0 +1,18 @@
+#include <iostream>
+
+int main() {
+    int a, b, pointer;
+    std::cout << "Enter 2 num" << std::endl;
+    std::cin >> a >> b;
+    if (a >= b) {
+        std::cout << "Invalid range" << std::endl;
+        return 0;
+    }
+    pointer = a + 1;
+    while (pointer < b){
+        std::cout << pointer << " ";
+        pointer++;
+    }
+    std::cout << std::endl;
+    return 0;
+}
